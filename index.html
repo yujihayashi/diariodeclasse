@@ -23,10 +23,8 @@
 	<script type="text/javascript" src="/library/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="/library/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/library/easing/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="/library/cycle2/jquery.cycle2.min.js"></script>
-	<script type="text/javascript" src="/library/cycle2/jquery.cycle2.swipe.min.js"></script>
-	<script type="text/javascript" src="/library/cycle2/jquery.cycle2.scrollVert.min.js"></script>
-	<script type="text/javascript" src="/library/cycle2/jquery.cycle2.carousel.min.js"></script>
+	<script type="text/javascript" src="/library/local-scroll/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script type="text/javascript" src="/library/local-scroll/jquery.localscroll-1.2.7-min.js"></script>
 	<script type="text/javascript" src="/js/bootstrap_site.js"></script>
 </head>
 <body class="home">
@@ -35,33 +33,166 @@
 		<div class="site-geral">
 			<header class="extra-header">
 				<div class="site-header">
-					<div class="container">
-						<nav class="navbar navbar-default" role="navigation">
+					<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+						<div class="container">
 							<div class="navbar-header">
-								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary">
 									<span class="sr-only">Navegação</span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
-								<a class="navbar-brand" href="/" title="Voltar para a página inicial">Diário de Classe</a>
+								<a class="navbar-brand" href="/" title="Voltar para a página inicial"><img src="/imagem/site/diario-de-classe.png" alt="Diário de Classe"></a>
 							</div>
-							<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<div class="collapse navbar-collapse navbar-primary">
 								<ul class="nav navbar-nav">
 									<li class=""><a href="#SOBRE">Sobre</a></li>
 									<li class=""><a href="#VANTAGENS">Vantagens</a></li>
 									<li class=""><a href="#CONTATO">Contato</a></li>
 								</ul>
 							</div><!-- /.navbar-collapse -->
-						</nav>
-					</div> <!-- .container -->
+						</div> <!-- .container -->
+					</nav>
 				</div> <!-- .site-header -->
 			</header> <!-- .extra-header -->
 			<div class="extra-central">
 				<div class="site-central" id="content">
-					<div class="container">
-						
-					</div> <!-- .container -->
+					<div class="page page-home" id="HOME">
+						<div class="container">
+							<div class="page-heading">
+								<h1 class="page-title sr-only">Diário de Classe</h1>
+								<div class="content-brand">
+									<img src="/imagem/site/diario-de-classe.png" alt="Diário de Classe">
+								</div> <!-- .content-brand -->
+							</div> <!-- .page-heading -->
+							<div class="page-content">
+								<strong>Organize sua metologia de sala de aula em um só lugar.</strong> 
+								Crie diário de frequências, nota e avaliações da sua turma e acesse aonde quiser! 
+								<a href="#EXPERIMENTE" class="btn btn-warning btn-lg">Experimente</a>
+								<a href="#SOBRE" class="btn btn-link">Saiba mais</a>
+
+							</div> <!-- .page-content -->
+						</div> <!-- .container -->
+					</div> <!-- .page-home -->
+					<div class="page page-sobre" id="SOBRE">
+						<div class="container">
+							<div class="page-heading">
+								<h2 class="page-title h1">Um diário de classe completo</h2>
+								<div class="resumo">
+									O bom e velho Diário de Classe agora em versão digital. 
+								</div> <!-- .resumo -->
+							</div> <!-- .page-heading -->
+							<div class="page-content">
+								<div class="texto">
+									Organize seus registros de maneira completa através do aplicativo. 
+									O aplicativo pode ser usado por professores de educação infantil, 
+									ensino fundamental, cursinhos, universidades e outros. 
+								</div> <!-- .texto -->
+								<a href="#EXPERIMENTE" class="btn btn-lg btn-warning btn-wired">Experimente</a>
+								<a href="#VANTAGENS" class="btn btn-link">Veja as vantagens</a>
+							</div> <!-- .page-content -->
+						</div> <!-- .container -->
+					</div> <!-- .page-sobre -->
+					<div class="page page-vantagens" id="VANTAGENS">
+						<div class="container">
+							<div class="page-heading">
+								<h2 class="page-title h1">Vantagens</h2>
+								<div class="resumo">
+									Veja as principais vantagens de utilizar o Diário de Classe
+									e acessá-lo em qualquer lugar: 
+								</div> <!-- .resumo -->
+							</div> <!-- .page-heading -->
+							<div class="page-content">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="media vantagem">
+											<span class="pull-left"></span>
+											<div class="media-body">
+												<h3 class="media-heading title">Registro de frequência escolar</h3>
+												<div class="texto">
+													Preencha e acompanhe a frequência dos seus alunos em sala de aula.
+												</div> <!-- .texto -->
+											</div> <!-- .media-body -->
+										</div> <!-- .vantagem -->
+									</div> <!-- .col-md-6 -->
+									<div class="col-md-6">
+										<div class="media vantagem">
+											<span class="pull-left"></span>
+											<div class="media-body">
+												<h3 class="media-heading title">Registro de frequência escolar</h3>
+												<div class="texto">
+													Preencha e acompanhe a frequência dos seus alunos em sala de aula.
+												</div> <!-- .texto -->
+											</div> <!-- .media-body -->
+										</div> <!-- .vantagem -->
+									</div> <!-- .col-md-6 -->
+									<div class="col-md-6">
+										<div class="media vantagem">
+											<span class="pull-left"></span>
+											<div class="media-body">
+												<h3 class="media-heading title">Registro de frequência escolar</h3>
+												<div class="texto">
+													Preencha e acompanhe a frequência dos seus alunos em sala de aula.
+												</div> <!-- .texto -->
+											</div> <!-- .media-body -->
+										</div> <!-- .vantagem -->
+									</div> <!-- .col-md-6 -->
+									<div class="col-md-6">
+										<div class="media vantagem">
+											<span class="pull-left"></span>
+											<div class="media-body">
+												<h3 class="media-heading title">Registro de frequência escolar</h3>
+												<div class="texto">
+													Preencha e acompanhe a frequência dos seus alunos em sala de aula.
+												</div> <!-- .texto -->
+											</div> <!-- .media-body -->
+										</div> <!-- .vantagem -->
+									</div> <!-- .col-md-6 -->
+								</div> <!-- .row -->
+								<a href="#EXPERIMENTE" class="btn btn-warning btn-wired btn-double">
+									Confira os planos
+									e experimente grátis por 30 dias
+								</a>
+							</div> <!-- .page-content -->
+						</div> <!-- .container -->
+					</div> <!-- .page-vantagens -->
+					<div class="page page-experimente" id="EXPERIMENTE">
+						<div class="container">
+							<div class="page-heading">
+								<h2 class="page-title h1">Experimente</h2>
+								<div class="resumo">
+									Todos seus dados em um só lugar
+								</div> <!-- .resumo -->
+							</div> <!-- .page-heading -->
+							<div class="page-content">
+								
+							</div> <!-- .page-content -->
+						</div> <!-- .container -->
+					</div> <!-- .page-experimente -->
+					<div class="page page-contato" id="CONTATO">
+						<div class="container">
+							<div class="page-heading">
+								<h2 class="page-title h1">Fale com a gente</h2>
+								<div class="resumo">
+									Utilize um de nossos canais de atendimento para entrar em contato com nossa equipe
+								</div> <!-- .resumo -->
+							</div> <!-- .page-heading -->
+							<div class="page-content">
+								<div class="row">
+									<div class="col-md-4">
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<h3 class="panel-title">Contatos</h3>
+											</div> <!-- .panel-body -->
+										</div> <!--.panel-default -->
+									</div> <!-- .col-md-4 -->
+									<div class="col-md-8">
+										
+									</div> <!-- .col-md-8 -->
+								</div> <!-- .row -->
+							</div> <!-- .page-content -->
+						</div> <!-- .container -->
+					</div> <!-- .page-contato -->
 				</div> <!-- .site-central -->
 			</div> <!-- .extra-central -->
 			<footer>

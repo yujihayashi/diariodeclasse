@@ -8,98 +8,12 @@ FUNÇÕES PADRÕES START
 /*********************************************************************
 FUNÇÕES PADRÕES END
 */
-/*
-NON-RESPONSIVE START
-**********************************************************************************************/
-/* ALTERAR APENAS ESTAS VARIAVEIS DE ACORDO COM O PROJETO START */
-.container {
-  max-width: none !important;
-  width: 960px;
-}
-.navbar-nav > li > a {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-/* ALTERAR APENAS ESTAS VARIAVEIS DE ACORDO COM O PROJETO END */
-/* Finesse the page header spacing */
-.page-header {
-  margin-bottom: 30px;
-}
-.page-header .lead {
-  margin-bottom: 10px;
-}
-/* Non-responsive overrides** Utilitze the following CSS to disable the responsive-ness of the container,* grid system, and navbar.*/
-/* Reset the container */
-/* Always float the navbar header */
-.navbar-header {
-  float: left;
-}
-/* Undo the collapsing navbar */
-.navbar-collapse {
-  display: block !important;
-  height: auto !important;
-  padding-bottom: 0;
-  overflow: visible !important;
-}
-.navbar-toggle {
-  display: none;
-}
-.navbar-collapse {
-  border-top: 0;
-}
-.navbar-brand {
-  margin-left: -15px;
-}
-/* Always apply the floated nav */
-.navbar-nav {
-  float: left;
-  margin: 0;
-}
-.navbar-nav > li {
-  float: left;
-}
-/* Redeclare since we override the float above */
-.navbar-nav.navbar-right {
-  float: right;
-}
-/* Undo custom dropdowns */
-.navbar .navbar-nav .open .dropdown-menu {
-  position: absolute;
-  float: left;
-  background-color: #fff;
-  border: 1px solid #cccccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-width: 0 1px 1px;
-  border-radius: 0 0 4px 4px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-}
-.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-  color: #333;
-}
-.navbar .navbar-nav .open .dropdown-menu > li > a:hover,
-.navbar .navbar-nav .open .dropdown-menu > li > a:focus,
-.navbar .navbar-nav .open .dropdown-menu > .active > a,
-.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
-.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
-  color: #fff !important;
-  background-color: #428bca !important;
-}
-.navbar .navbar-nav .open .dropdown-menu > .disabled > a,
-.navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-.navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-  color: #999 !important;
-  background-color: transparent !important;
-}
-/**********************************************************************************************
-NON-RESPONSIVE END
-*/
 ::selection {
-  background-color: #812d2a;
+  background-color: #3c8fd0;
   color: #FFF;
 }
 ::-moz-selection {
-  background-color: #812d2a;
+  background-color: #3c8fd0;
   color: #FFF;
 }
 small {
@@ -116,8 +30,16 @@ button {
 /*
 FONTS START
 **********************************************************************************************/
-.box-chamada {
-  font-family: 'robotoblack', Arial, sans-serif;
+.btn {
+  font-family: 'latoblack', Arial, sans-serif;
+  font-weight: normal;
+}
+.navbar-nav {
+  font-family: 'latobold', Arial, sans-serif;
+  font-weight: normal;
+}
+.page-title {
+  font-family: 'nexa_rust_sansblack', Arial, sans-serif;
   font-weight: normal;
 }
 /**********************************************************************************************
@@ -126,6 +48,23 @@ FONTS END
 /*
 ESTRUTURA START
 **********************************************************************************************/
+.extra-header .navbar {
+  border: 0;
+  margin: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.extra-header .navbar-brand {
+  padding: 8px 10px;
+}
+.extra-header .navbar-brand img {
+  max-height: 36px;
+}
+.extra-header .navbar-nav {
+  text-transform: uppercase;
+  font-size: 16px;
+}
 /**********************************************************************************************
 ESTRUTURA END
 */
@@ -150,6 +89,67 @@ CLASSES START
   -moz-border-radius: 150px;
   border-radius: 150px;
 }
+.btn {
+  text-transform: uppercase;
+}
+.box-share,
+.box-share > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.box-share .fb_iframe_widget span {
+  vertical-align: top !important;
+}
+.cycle-slideshow li * {
+  white-space: normal;
+}
+.cycle-nav span {
+  display: inline-block;
+  cursor: pointer;
+}
+.cycle-galeria {
+  margin: 0 0 30px;
+}
+.cycle-galeria,
+.cycle-galeria .cycle-slideshow,
+.cycle-galeria .cycle-slideshow li,
+.cycle-galeria .link {
+  width: 100%;
+  height: 460px;
+}
+.cycle-galeria .link {
+  display: block;
+  background: #000;
+  background-size: cover;
+  text-align: center;
+}
+.cycle-galeria .imagem {
+  display: inline-block;
+  max-height: 440px;
+}
+.cycle-galeria .cycle-nav {
+  text-align: center;
+}
+.cycle-galeria .cycle-nav span {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  text-indent: -1000px;
+  overflow: hidden;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  background: #AEAEAE;
+}
+.cycle-galeria .cycle-nav span + span {
+  margin-left: 10px;
+}
+.cycle-galeria .cycle-nav span.cycle-pager-active {
+  background: #3c8fd0;
+}
+.form-control {
+  box-shadow: none;
+}
 .imagem {
   display: inline-block;
   overflow: hidden;
@@ -170,6 +170,38 @@ CLASSES START
   display: inline-block;
   background-image: url(../imagem/site/ycon.png);
 }
+.pixel {
+  width: 100%;
+  height: 100%;
+}
+.page .page-heading {
+  text-align: center;
+}
+.page .page-title {
+  text-transform: uppercase;
+}
+.page .resumo {
+  font-size: 20px;
+}
+.page-home {
+  background: #e9e7e7 url(../imagem/site/bg-home.jpg) no-repeat center top;
+  height: 690px;
+}
+.page-sobre {
+  background: #729ac4 url(../imagem/site/bg-sobre.jpg) no-repeat center top;
+  height: 720px;
+}
+.page-sobre,
+.page-sobre a {
+  color: #FFF;
+}
+.page-experimente {
+  background: #729ac4 url(../imagem/site/bg-experimente.jpg) no-repeat center bottom;
+  height: 740px;
+}
+.page-experimente .page-heading {
+  color: #FFF;
+}
 .space {
   width: 1%;
   display: inline-block;
@@ -178,6 +210,32 @@ CLASSES START
 }
 .relative {
   position: relative;
+}
+.social-footer,
+.social-central,
+.social-header {
+  font-size: 24px;
+}
+.social-footer a,
+.social-central a,
+.social-header a {
+  display: inline-block;
+}
+.social-footer a + a,
+.social-central a + a,
+.social-header a + a {
+  margin-left: 15px;
+}
+.text-format {
+  line-height: 1.8;
+}
+.text-format img[style*='float:right'] {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.text-format img[style*='float:left'] {
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 /**********************************************************************************************
 CLASSES END
