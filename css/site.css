@@ -30,10 +30,14 @@ button {
 /*
 FONTS START
 **********************************************************************************************/
-.page-vantagens .btn-experimente small {
+.btn-experimente small {
   font-family: 'latolight', Arial, sans-serif;
   font-weight: normal;
 }
+.selo,
+.preco .moeda,
+.preco .valor,
+.preco .centavos,
 .btn {
   font-family: 'latoblack', Arial, sans-serif;
   font-weight: normal;
@@ -112,6 +116,14 @@ CLASSES START
 .btn-experimente:hover {
   text-decoration: underline;
 }
+.download-central {
+  margin: 30px 0;
+  text-align: center;
+}
+.download-central a {
+  display: inline-block;
+  margin: 0 10px;
+}
 .form-control {
   box-shadow: none;
 }
@@ -175,7 +187,7 @@ CLASSES START
 }
 .page-sobre {
   background: #729ac4 url(../imagem/site/bg-sobre.jpg) no-repeat center top;
-  height: 720px;
+  min-height: 720px;
   text-align: center;
 }
 .page-sobre,
@@ -275,7 +287,7 @@ CLASSES START
 }
 .page-experimente {
   background: #729ac4 url(../imagem/site/bg-experimente.jpg) no-repeat center bottom;
-  height: 740px;
+  min-height: 740px;
 }
 .page-experimente .page-heading {
   padding: 90px 0 30px;
@@ -286,6 +298,130 @@ CLASSES START
 .page-experimente .page-heading {
   color: #FFF;
 }
+.page-experimente .page-content {
+  padding-bottom: 40px;
+}
+.page-contato .page-heading {
+  padding: 90px 0 30px;
+}
+.plano {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #FFF;
+  padding: 0 0 18px;
+  text-align: center;
+}
+.plano .selo {
+  position: absolute;
+  left: -65px;
+  top: 20px;
+}
+.plano .extra {
+  background: #FFF;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 18px 30px 30px;
+  min-height: 390px;
+  position: relative;
+}
+.plano .title {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.plano .resumo {
+  font-size: 16px;
+}
+.plano .btn-experimente {
+  background: none;
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+  font-size: 20px;
+  line-height: 1;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  padding: 15px 40px;
+}
+.plano .btn-experimente span {
+  display: block;
+}
+.plano .btn-experimente small {
+  color: #555555;
+  font-size: 16px;
+  text-transform: none;
+}
+.plano.plano-info .title {
+  color: #729ac4;
+}
+.plano.plano-info .btn-experimente {
+  border-color: #729ac4;
+  color: #729ac4;
+}
+.plano.plano-success .title {
+  color: #6cb541;
+}
+.plano.plano-success .btn-experimente {
+  border-color: #6cb541;
+  color: #6cb541;
+}
+.preco {
+  line-height: 1;
+}
+.preco span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.preco .mensal,
+.preco .anual {
+  margin: 16px 0;
+}
+.preco .mensal .moeda {
+  font-size: 27px;
+}
+.preco .mensal .valor {
+  font-size: 63px;
+}
+.preco .mensal .resto span {
+  display: block;
+}
+.preco .mensal .centavos {
+  font-size: 24px;
+}
+.preco .resto,
+.preco .anual {
+  text-align: left;
+}
+.preco .text {
+  font-size: 18px;
+}
+.preco .anual {
+  border-left: 1px solid #CCC;
+}
+.preco .anual span {
+  display: block;
+}
+.preco .anual .valor {
+  font-size: 20px;
+}
+.selo {
+  background: url(../imagem/site/selo-warning.png) no-repeat left top;
+  width: 131px;
+  height: 131px;
+  text-align: center;
+  color: #FFF;
+  font-size: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 1;
+}
+.selo .text {
+  display: inline-block;
+  max-width: 94%;
+  vertical-align: middle;
+  text-align: center;
+}
 .space {
   width: 1%;
   display: inline-block;
@@ -294,9 +430,6 @@ CLASSES START
 }
 .relative {
   position: relative;
-}
-.plano .title {
-  font-size: 22px;
 }
 .social-footer,
 .social-central,
@@ -332,3 +465,9 @@ CLASSES START
 /**********************************************************************************************
 CLASSES END
 */
+@media (max-width: 767px) {
+  .preco .anual {
+    text-align: center;
+    border: 0;
+  }
+}
