@@ -1,0 +1,214 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("flaticon.eot");
+	src: url("flaticon.eot#iefix") format("embedded-opentype"),
+	url("flaticon.woff") format("woff"),
+	url("flaticon.ttf") format("truetype"),
+	url("flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}.flaticon-agreement4:before {
+	content: "\e000";
+}
+.flaticon-alarm5:before {
+	content: "\e001";
+}
+.flaticon-badges2:before {
+	content: "\e002";
+}
+.flaticon-batteries13:before {
+	content: "\e003";
+}
+.flaticon-books91:before {
+	content: "\e004";
+}
+.flaticon-calendars12:before {
+	content: "\e005";
+}
+.flaticon-chain13:before {
+	content: "\e006";
+}
+.flaticon-check mark5:before {
+	content: "\e007";
+}
+.flaticon-cinema68:before {
+	content: "\e008";
+}
+.flaticon-circle168:before {
+	content: "\e009";
+}
+.flaticon-clocks18:before {
+	content: "\e00a";
+}
+.flaticon-clouds64:before {
+	content: "\e00b";
+}
+.flaticon-cogwheels10:before {
+	content: "\e00c";
+}
+.flaticon-computer mouse24:before {
+	content: "\e00d";
+}
+.flaticon-computer screen13:before {
+	content: "\e00e";
+}
+.flaticon-cups17:before {
+	content: "\e00f";
+}
+.flaticon-curve arrow32:before {
+	content: "\e010";
+}
+.flaticon-document235:before {
+	content: "\e011";
+}
+.flaticon-document236:before {
+	content: "\e012";
+}
+.flaticon-document237:before {
+	content: "\e013";
+}
+.flaticon-down arrows11:before {
+	content: "\e014";
+}
+.flaticon-error4:before {
+	content: "\e015";
+}
+.flaticon-garbage24:before {
+	content: "\e016";
+}
+.flaticon-handshake4:before {
+	content: "\e017";
+}
+.flaticon-houses16:before {
+	content: "\e018";
+}
+.flaticon-inverted commas:before {
+	content: "\e019";
+}
+.flaticon-laptops2:before {
+	content: "\e01a";
+}
+.flaticon-left arrows6:before {
+	content: "\e01b";
+}
+.flaticon-letters22:before {
+	content: "\e01c";
+}
+.flaticon-lifesaver19:before {
+	content: "\e01d";
+}
+.flaticon-lightning49:before {
+	content: "\e01e";
+}
+.flaticon-like7:before {
+	content: "\e01f";
+}
+.flaticon-list22:before {
+	content: "\e020";
+}
+.flaticon-loving13:before {
+	content: "\e021";
+}
+.flaticon-megaphones:before {
+	content: "\e022";
+}
+.flaticon-messages10:before {
+	content: "\e023";
+}
+.flaticon-minus sign5:before {
+	content: "\e024";
+}
+.flaticon-money card4:before {
+	content: "\e025";
+}
+.flaticon-multimedia option14:before {
+	content: "\e026";
+}
+.flaticon-multimedia option15:before {
+	content: "\e027";
+}
+.flaticon-multimedia option16:before {
+	content: "\e028";
+}
+.flaticon-multimedia option17:before {
+	content: "\e029";
+}
+.flaticon-multimedia option18:before {
+	content: "\e02a";
+}
+.flaticon-padlock105:before {
+	content: "\e02b";
+}
+.flaticon-paper40:before {
+	content: "\e02c";
+}
+.flaticon-pencils13:before {
+	content: "\e02d";
+}
+.flaticon-photo246:before {
+	content: "\e02e";
+}
+.flaticon-photography39:before {
+	content: "\e02f";
+}
+.flaticon-pie graph:before {
+	content: "\e030";
+}
+.flaticon-play video3:before {
+	content: "\e031";
+}
+.flaticon-questions6:before {
+	content: "\e032";
+}
+.flaticon-radio12:before {
+	content: "\e033";
+}
+.flaticon-raindrop:before {
+	content: "\e034";
+}
+.flaticon-right arrows6:before {
+	content: "\e035";
+}
+.flaticon-save file2:before {
+	content: "\e036";
+}
+.flaticon-setup2:before {
+	content: "\e037";
+}
+.flaticon-shopping carts6:before {
+	content: "\e038";
+}
+.flaticon-shopping store11:before {
+	content: "\e039";
+}
+.flaticon-smartphones23:before {
+	content: "\e03a";
+}
+.flaticon-stars64:before {
+	content: "\e03b";
+}
+.flaticon-stats47:before {
+	content: "\e03c";
+}
+.flaticon-thumb down4:before {
+	content: "\e03d";
+}
+.flaticon-up arrows16:before {
+	content: "\e03e";
+}
+.flaticon-wallets3:before {
+	content: "\e03f";
+}
+.flaticon-wireless internet3:before {
+	content: "\e040";
+}
+.flaticon-zoom13:before {
+	content: "\e041";
+}

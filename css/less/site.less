@@ -16,6 +16,9 @@ FUNÇÕES PADRÕES START
 .box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
     .box-shadow(@style, rgba(0, 0, 0, @alpha));
 }
+.long-shadow(@color) {
+    text-shadow:1px 1px 0 @color, 2px 2px 0 @color, 3px 3px 0 @color, 4px 4px 0 @color, 5px 5px 0 @color, 6px 6px 0 @color, 7px 7px 0 @color, 8px 8px 0 @color, 9px 9px 0 @color, 10px 10px 0 @color, 11px 11px 0 @color, 12px 12px 0 @color, 13px 13px 0 @color, 14px 14px 0 @color, 15px 15px 0 @color, 16px 16px 0 @color, 17px 17px 0 @color, 18px 18px 0 @color, 19px 19px 0 @color, 20px 20px 0 @color, 21px 21px 0 @color, 22px 22px 0 @color, 23px 23px 0 @color, 24px 24px 0 @color, 25px 25px 0 @color, 26px 26px 0 @color, 27px 27px 0 @color, 28px 28px 0 @color, 29px 29px 0 @color, 30px 30px 0 @color, 31px 31px 0 @color, 32px 32px 0 @color, 33px 33px 0 @color, 34px 34px 0 @color, 35px 35px 0 @color, 36px 36px 0 @color, 37px 37px 0 @color, 38px 38px 0 @color, 39px 39px 0 @color, 40px 40px 0 @color, 41px 41px 0 @color, 42px 42px 0 @color, 43px 43px 0 @color, 44px 44px 0 @color, 45px 45px 0 @color, 46px 46px 0 @color, 47px 47px 0 @color, 48px 48px 0 @color, 49px 49px 0 @color;overflow: hidden;
+}
 
 .clear, .first{
     clear:both;
@@ -31,9 +34,13 @@ a, button  {transition: all 0.25s ease 0s;}
 /*
 FONTS START
 **********************************************************************************************/
+.page-vantagens .btn-experimente small {font-family: 'latolight', Arial, sans-serif;font-weight: normal;}
 .btn {font-family: 'latoblack', Arial, sans-serif;font-weight: normal;}
-.navbar-nav {font-family: 'latobold', Arial, sans-serif;font-weight: normal;}
+.page-vantagens .title {font-family: 'latoblack_italic', Arial, sans-serif;font-weight: normal;}
+strong, .navbar-nav {font-family: 'latobold', Arial, sans-serif;font-weight: normal;}
+.page-sobre .resumo {font-family: 'latobold_italic', Arial, sans-serif;font-weight: normal;}
 .page-title {font-family: 'nexa_rust_sansblack', Arial, sans-serif;font-weight: normal;}
+.page-sobre .page-title .destaque {font-family: 'nexa_rust_script_l0regular', Arial, sans-serif;font-weight: normal;}
 /**********************************************************************************************
 FONTS END
 */
@@ -65,58 +72,81 @@ CLASSES START
 .btn-gray {background: #EEE;color:#C93F2A;}
 .btn-rounded {-webkit-border-radius: 150px;-moz-border-radius: 150px;border-radius: 150px;}
 .btn {text-transform: uppercase;}
-.box-share {
-    &, > div {display: inline-block;vertical-align: middle;}
-    .fb_iframe_widget span {vertical-align: top !important;}
-}
-.cycle-slideshow {
-    li {
-        * {white-space: normal;}
-    }
-}
-.cycle-nav {
-	span {display: inline-block;cursor: pointer;}
-}
-.cycle-galeria {
-    margin:0 0 30px;
-    &, .cycle-slideshow, .cycle-slideshow li, .link {width: 100%;height: 460px;}
-    .link {display: block;background:#000;background-size:cover;text-align: center;}
-    .imagem {display: inline-block;max-height: 440px;}
-    .cycle-nav {
-        text-align: center;
-        span {
-            display: inline-block;width: 9px;height: 9px;text-indent: -1000px;overflow: hidden;.border-radius(50px);background: #AEAEAE;
-            + span {margin-left: 10px;}
-            &.cycle-pager-active {background: @primary-color;}
-        }
-    }
+.btn-experimente {
+    &:hover {text-decoration: underline;}
 }
 
 .form-control {box-shadow:none;}
 
 .imagem {display: inline-block;overflow: hidden;max-width: 100%;}
-.imagem-rounded {-webkit-border-radius: 150px;-moz-border-radius: 150px;border-radius: 150px;}
 .inline-block {display:inline-block;}
-[class^='ycon-'], [class*='ycon-'] {background-repeat:no-repeat;vertical-align:middle;display:inline-block;background-image:url(../imagem/site/ycon.png);}
-
 
 .pixel {width: 100%;height: 100%;}
 .page {
     .page-heading {text-align: center;}
-    .page-title {text-transform: uppercase;}
+    .page-title {text-transform: uppercase;margin:0 0 5px;}
     .resumo {font-size: 20px;}
 }
-.page-home {background: #e9e7e7 url(../imagem/site/bg-home.jpg) no-repeat center top;height: 690px;}
+.page-home {
+    background: #e9e7e7 url(../imagem/site/bg-home.jpg) no-repeat center top;height: 690px;text-align: center;
+    .page-heading {min-height: 135px;padding:30px 0;}
+    .monitor {
+        color: #FFF;padding:64px 40px;font-size: 22px;
+        .destaque {display: block;}
+    }
+    .texto {margin-bottom: 34px;}
+    .btn-link {color: #ffe400;text-transform:none;font-size: 19px;}
+    .btn-experimente {
+        font-size: 28px;color: #00518f;background: #ffe400;padding:20px 36px;.border-radius(10px);overflow:hidden;.long-shadow(#fed900);
+    }
+}
 .page-sobre {
-    background: #729ac4 url(../imagem/site/bg-sobre.jpg) no-repeat center top;height: 720px;
+    background: #729ac4 url(../imagem/site/bg-sobre.jpg) no-repeat center top;height: 720px;text-align: center;
     &, a {color: #FFF;}
+    .page-heading {padding: 90px 0 30px;}
+    .page-title {
+        .destaque {text-transform: lowercase;color: #3c8fd0;font-size: 44px;width: 67px;height: 48px;background: url(../imagem/site/risk.png) no-repeat center;display: inline-block;margin:0px -20px 0px;vertical-align: middle;}
+    }
+    .resumo {font-size: 24px;}
+    .texto {font-size: 22px;line-height: 1.8;margin:0 0 54px;}
+    .btn-experimente {color: #ffe400;border:5px solid #ffe400;.border-radius(10px);.long-shadow(#678fb9);background: none;font-size: 27px;padding: 18px 36px;margin:0 0 20px;}
+    .btn-link {
+        text-transform: none;font-size: 17px;
+        &:hover {color: #FFF;}
+    }
+}
+.page-vantagens {
+    .page-heading {padding:90px 0 30px;}
+    .page-title {font-size: 64px;}
+    .resumo {font-size: 22px;}
+    .title {font-size: 20px;}
+    .page-content {padding:0 0 50px;}
+    .media {
+        > .pull-left {padding-right: 20px;}
+    }
+    .icone {
+        &:before {font-size: 80px;line-height: 1;color: #c7ced4;}
+    }
+    .vantagem {font-size: 18px;margin:0 0 40px;}
+    .text-plus {margin:0 0 30px;}
+    .btn-experimente {
+        background:none;border:2px solid @third-color;color: @third-color;font-size: 20px;line-height: 1;.border-radius(10px);padding:15px 40px;
+        span {display: block;}
+        small {color: #555555;font-size: 16px;text-transform: none;}
+    }
 }
 .page-experimente {
+    .page-heading {padding:90px 0 30px;}
+    .resumo {font-size: 22px;}
     background: #729ac4 url(../imagem/site/bg-experimente.jpg) no-repeat center bottom;height: 740px;
     .page-heading {color: #FFF;}
 }
 .space {width:1%;display:inline-block;height:100%;vertical-align:middle;}
 .relative {position: relative;}
+
+.plano {
+    .title {font-size: 22px;}
+}
 
 .social-footer, .social-central, .social-header {
     font-size: 24px;
@@ -125,33 +155,24 @@ CLASSES START
         + a {margin-left: 15px;}
     }
 }
-.text-format {
-    line-height: 1.8;
-    img[style*='float:right'] {margin-left: 20px;margin-bottom: 20px;}
-    img[style*='float:left'] {margin-right: 20px;margin-bottom: 20px;}
-}
+[class^='ycon-'], [class*='ycon-'] {background-repeat:no-repeat;vertical-align:middle;display:inline-block;}
+.ycon-chaves-yellow {width: 563px;height: 194px;background-image:url(../imagem/site/chaves-yellow.png);}
+.ycon-chaves-gray {width: 85px;height: 21px;background-image:url(../imagem/site/chaves-gray.png);}
 /**********************************************************************************************
 CLASSES END
-*/
-/*
-JQUERY UI START
-**********************************************************************************************/
-
-/**********************************************************************************************
-JQUERY UI END
 */
 @media print {
 
 }
 @media (max-width: 767px) {
- /*    .site-geral:before {content:"TABLET";}*/
+
 }
 @media (max-width: 480px) {
- /*#GERAL:before {content:"MOBILE";}*/
+
 }
 @media (min-width: 768px) and (max-width: 980px) {
 
 }
 @media (min-width: 981px) and (max-width: 1200px) {
- /*#GERAL:before {content:"ACIMA DE TABLET";}*/
+
 }

@@ -30,16 +30,33 @@ button {
 /*
 FONTS START
 **********************************************************************************************/
+.page-vantagens .btn-experimente small {
+  font-family: 'latolight', Arial, sans-serif;
+  font-weight: normal;
+}
 .btn {
   font-family: 'latoblack', Arial, sans-serif;
   font-weight: normal;
 }
+.page-vantagens .title {
+  font-family: 'latoblack_italic', Arial, sans-serif;
+  font-weight: normal;
+}
+strong,
 .navbar-nav {
   font-family: 'latobold', Arial, sans-serif;
   font-weight: normal;
 }
+.page-sobre .resumo {
+  font-family: 'latobold_italic', Arial, sans-serif;
+  font-weight: normal;
+}
 .page-title {
   font-family: 'nexa_rust_sansblack', Arial, sans-serif;
+  font-weight: normal;
+}
+.page-sobre .page-title .destaque {
+  font-family: 'nexa_rust_script_l0regular', Arial, sans-serif;
   font-weight: normal;
 }
 /**********************************************************************************************
@@ -92,60 +109,8 @@ CLASSES START
 .btn {
   text-transform: uppercase;
 }
-.box-share,
-.box-share > div {
-  display: inline-block;
-  vertical-align: middle;
-}
-.box-share .fb_iframe_widget span {
-  vertical-align: top !important;
-}
-.cycle-slideshow li * {
-  white-space: normal;
-}
-.cycle-nav span {
-  display: inline-block;
-  cursor: pointer;
-}
-.cycle-galeria {
-  margin: 0 0 30px;
-}
-.cycle-galeria,
-.cycle-galeria .cycle-slideshow,
-.cycle-galeria .cycle-slideshow li,
-.cycle-galeria .link {
-  width: 100%;
-  height: 460px;
-}
-.cycle-galeria .link {
-  display: block;
-  background: #000;
-  background-size: cover;
-  text-align: center;
-}
-.cycle-galeria .imagem {
-  display: inline-block;
-  max-height: 440px;
-}
-.cycle-galeria .cycle-nav {
-  text-align: center;
-}
-.cycle-galeria .cycle-nav span {
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-  text-indent: -1000px;
-  overflow: hidden;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  background: #AEAEAE;
-}
-.cycle-galeria .cycle-nav span + span {
-  margin-left: 10px;
-}
-.cycle-galeria .cycle-nav span.cycle-pager-active {
-  background: #3c8fd0;
+.btn-experimente:hover {
+  text-decoration: underline;
 }
 .form-control {
   box-shadow: none;
@@ -155,20 +120,8 @@ CLASSES START
   overflow: hidden;
   max-width: 100%;
 }
-.imagem-rounded {
-  -webkit-border-radius: 150px;
-  -moz-border-radius: 150px;
-  border-radius: 150px;
-}
 .inline-block {
   display: inline-block;
-}
-[class^='ycon-'],
-[class*='ycon-'] {
-  background-repeat: no-repeat;
-  vertical-align: middle;
-  display: inline-block;
-  background-image: url(../imagem/site/ycon.png);
 }
 .pixel {
   width: 100%;
@@ -179,6 +132,7 @@ CLASSES START
 }
 .page .page-title {
   text-transform: uppercase;
+  margin: 0 0 5px;
 }
 .page .resumo {
   font-size: 20px;
@@ -186,18 +140,148 @@ CLASSES START
 .page-home {
   background: #e9e7e7 url(../imagem/site/bg-home.jpg) no-repeat center top;
   height: 690px;
+  text-align: center;
+}
+.page-home .page-heading {
+  min-height: 135px;
+  padding: 30px 0;
+}
+.page-home .monitor {
+  color: #FFF;
+  padding: 64px 40px;
+  font-size: 22px;
+}
+.page-home .monitor .destaque {
+  display: block;
+}
+.page-home .texto {
+  margin-bottom: 34px;
+}
+.page-home .btn-link {
+  color: #ffe400;
+  text-transform: none;
+  font-size: 19px;
+}
+.page-home .btn-experimente {
+  font-size: 28px;
+  color: #00518f;
+  background: #ffe400;
+  padding: 20px 36px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-shadow: 1px 1px 0 #fed900, 2px 2px 0 #fed900, 3px 3px 0 #fed900, 4px 4px 0 #fed900, 5px 5px 0 #fed900, 6px 6px 0 #fed900, 7px 7px 0 #fed900, 8px 8px 0 #fed900, 9px 9px 0 #fed900, 10px 10px 0 #fed900, 11px 11px 0 #fed900, 12px 12px 0 #fed900, 13px 13px 0 #fed900, 14px 14px 0 #fed900, 15px 15px 0 #fed900, 16px 16px 0 #fed900, 17px 17px 0 #fed900, 18px 18px 0 #fed900, 19px 19px 0 #fed900, 20px 20px 0 #fed900, 21px 21px 0 #fed900, 22px 22px 0 #fed900, 23px 23px 0 #fed900, 24px 24px 0 #fed900, 25px 25px 0 #fed900, 26px 26px 0 #fed900, 27px 27px 0 #fed900, 28px 28px 0 #fed900, 29px 29px 0 #fed900, 30px 30px 0 #fed900, 31px 31px 0 #fed900, 32px 32px 0 #fed900, 33px 33px 0 #fed900, 34px 34px 0 #fed900, 35px 35px 0 #fed900, 36px 36px 0 #fed900, 37px 37px 0 #fed900, 38px 38px 0 #fed900, 39px 39px 0 #fed900, 40px 40px 0 #fed900, 41px 41px 0 #fed900, 42px 42px 0 #fed900, 43px 43px 0 #fed900, 44px 44px 0 #fed900, 45px 45px 0 #fed900, 46px 46px 0 #fed900, 47px 47px 0 #fed900, 48px 48px 0 #fed900, 49px 49px 0 #fed900;
+  overflow: hidden;
 }
 .page-sobre {
   background: #729ac4 url(../imagem/site/bg-sobre.jpg) no-repeat center top;
   height: 720px;
+  text-align: center;
 }
 .page-sobre,
 .page-sobre a {
   color: #FFF;
 }
+.page-sobre .page-heading {
+  padding: 90px 0 30px;
+}
+.page-sobre .page-title .destaque {
+  text-transform: lowercase;
+  color: #3c8fd0;
+  font-size: 44px;
+  width: 67px;
+  height: 48px;
+  background: url(../imagem/site/risk.png) no-repeat center;
+  display: inline-block;
+  margin: 0px -20px 0px;
+  vertical-align: middle;
+}
+.page-sobre .resumo {
+  font-size: 24px;
+}
+.page-sobre .texto {
+  font-size: 22px;
+  line-height: 1.8;
+  margin: 0 0 54px;
+}
+.page-sobre .btn-experimente {
+  color: #ffe400;
+  border: 5px solid #ffe400;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-shadow: 1px 1px 0 #678fb9, 2px 2px 0 #678fb9, 3px 3px 0 #678fb9, 4px 4px 0 #678fb9, 5px 5px 0 #678fb9, 6px 6px 0 #678fb9, 7px 7px 0 #678fb9, 8px 8px 0 #678fb9, 9px 9px 0 #678fb9, 10px 10px 0 #678fb9, 11px 11px 0 #678fb9, 12px 12px 0 #678fb9, 13px 13px 0 #678fb9, 14px 14px 0 #678fb9, 15px 15px 0 #678fb9, 16px 16px 0 #678fb9, 17px 17px 0 #678fb9, 18px 18px 0 #678fb9, 19px 19px 0 #678fb9, 20px 20px 0 #678fb9, 21px 21px 0 #678fb9, 22px 22px 0 #678fb9, 23px 23px 0 #678fb9, 24px 24px 0 #678fb9, 25px 25px 0 #678fb9, 26px 26px 0 #678fb9, 27px 27px 0 #678fb9, 28px 28px 0 #678fb9, 29px 29px 0 #678fb9, 30px 30px 0 #678fb9, 31px 31px 0 #678fb9, 32px 32px 0 #678fb9, 33px 33px 0 #678fb9, 34px 34px 0 #678fb9, 35px 35px 0 #678fb9, 36px 36px 0 #678fb9, 37px 37px 0 #678fb9, 38px 38px 0 #678fb9, 39px 39px 0 #678fb9, 40px 40px 0 #678fb9, 41px 41px 0 #678fb9, 42px 42px 0 #678fb9, 43px 43px 0 #678fb9, 44px 44px 0 #678fb9, 45px 45px 0 #678fb9, 46px 46px 0 #678fb9, 47px 47px 0 #678fb9, 48px 48px 0 #678fb9, 49px 49px 0 #678fb9;
+  overflow: hidden;
+  background: none;
+  font-size: 27px;
+  padding: 18px 36px;
+  margin: 0 0 20px;
+}
+.page-sobre .btn-link {
+  text-transform: none;
+  font-size: 17px;
+}
+.page-sobre .btn-link:hover {
+  color: #FFF;
+}
+.page-vantagens .page-heading {
+  padding: 90px 0 30px;
+}
+.page-vantagens .page-title {
+  font-size: 64px;
+}
+.page-vantagens .resumo {
+  font-size: 22px;
+}
+.page-vantagens .title {
+  font-size: 20px;
+}
+.page-vantagens .page-content {
+  padding: 0 0 50px;
+}
+.page-vantagens .media > .pull-left {
+  padding-right: 20px;
+}
+.page-vantagens .icone:before {
+  font-size: 80px;
+  line-height: 1;
+  color: #c7ced4;
+}
+.page-vantagens .vantagem {
+  font-size: 18px;
+  margin: 0 0 40px;
+}
+.page-vantagens .text-plus {
+  margin: 0 0 30px;
+}
+.page-vantagens .btn-experimente {
+  background: none;
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+  font-size: 20px;
+  line-height: 1;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 15px 40px;
+}
+.page-vantagens .btn-experimente span {
+  display: block;
+}
+.page-vantagens .btn-experimente small {
+  color: #555555;
+  font-size: 16px;
+  text-transform: none;
+}
 .page-experimente {
   background: #729ac4 url(../imagem/site/bg-experimente.jpg) no-repeat center bottom;
   height: 740px;
+}
+.page-experimente .page-heading {
+  padding: 90px 0 30px;
+}
+.page-experimente .resumo {
+  font-size: 22px;
 }
 .page-experimente .page-heading {
   color: #FFF;
@@ -210,6 +294,9 @@ CLASSES START
 }
 .relative {
   position: relative;
+}
+.plano .title {
+  font-size: 22px;
 }
 .social-footer,
 .social-central,
@@ -226,32 +313,22 @@ CLASSES START
 .social-header a + a {
   margin-left: 15px;
 }
-.text-format {
-  line-height: 1.8;
+[class^='ycon-'],
+[class*='ycon-'] {
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  display: inline-block;
 }
-.text-format img[style*='float:right'] {
-  margin-left: 20px;
-  margin-bottom: 20px;
+.ycon-chaves-yellow {
+  width: 563px;
+  height: 194px;
+  background-image: url(../imagem/site/chaves-yellow.png);
 }
-.text-format img[style*='float:left'] {
-  margin-right: 20px;
-  margin-bottom: 20px;
+.ycon-chaves-gray {
+  width: 85px;
+  height: 21px;
+  background-image: url(../imagem/site/chaves-gray.png);
 }
 /**********************************************************************************************
 CLASSES END
 */
-/*
-JQUERY UI START
-**********************************************************************************************/
-/**********************************************************************************************
-JQUERY UI END
-*/
-@media (max-width: 767px) {
-  /*    .site-geral:before {content:"TABLET";}*/
-}
-@media (max-width: 480px) {
-  /*#GERAL:before {content:"MOBILE";}*/
-}
-@media (min-width: 981px) and (max-width: 1200px) {
-  /*#GERAL:before {content:"ACIMA DE TABLET";}*/
-}

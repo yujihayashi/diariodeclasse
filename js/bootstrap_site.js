@@ -24,7 +24,7 @@ $(function() {
     $.localScroll.hash({
         target: 'body', // Could be a selector or a jQuery object too.
         queue:true,
-        offset: -115,
+        offset: -55,
         duration:1000
     });
 
@@ -37,7 +37,7 @@ $(function() {
         queue:true,
         duration:1000,
         hash:true,
-        offset: -115,
+        offset: -55,
         //filter: {'.panel-group'},
         onBefore:function( e, anchor, $target ){
             // The 'this' is the settings object, can be modified
