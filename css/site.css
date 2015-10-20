@@ -27,11 +27,18 @@ a,
 button {
   transition: all 0.25s ease 0s;
 }
+hr.white {
+  border-color: rgba(215, 215, 215, 0.15);
+}
 /*
 FONTS START
 **********************************************************************************************/
 .btn-experimente small {
   font-family: 'latolight', Arial, sans-serif;
+  font-weight: normal;
+}
+.site-resumo {
+  font-family: 'latolight_italic', Arial, sans-serif;
   font-weight: normal;
 }
 .selo,
@@ -46,6 +53,7 @@ FONTS START
   font-family: 'latoblack_italic', Arial, sans-serif;
   font-weight: normal;
 }
+.menu-footer,
 strong,
 .navbar-nav {
   font-family: 'latobold', Arial, sans-serif;
@@ -86,6 +94,56 @@ ESTRUTURA START
   text-transform: uppercase;
   font-size: 16px;
 }
+.extra-footer .site-footer {
+  background: #47484b;
+  padding: 10px 0 20px;
+}
+.extra-footer .site-direitos {
+  background: #3d3e40;
+  color: #b1b1b1;
+  font-size: 14px;
+  padding: 20px 0;
+}
+.extra-footer .social-footer {
+  text-align: right;
+  padding: 6px 0;
+}
+.extra-footer .menu-footer {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-left: -15px;
+}
+.extra-footer .menu-footer > li {
+  display: inline-block;
+}
+.extra-footer .menu-footer > li a {
+  color: #FFF;
+  display: block;
+  padding: 15px;
+}
+.extra-footer hr {
+  margin: 10px 0;
+}
+.extra-footer .site-resumo {
+  font-size: 18px;
+  color: #FFF;
+  line-height: 1.6;
+  margin: 30px 0 15px;
+}
+.extra-footer .site-resumo .marca {
+  padding-top: 10px;
+}
+.menu-direitos {
+  display: inline-block;
+}
+.menu-direitos > li {
+  display: inline-block;
+}
+.menu-direitos > li a {
+  color: #FFF;
+  display: block;
+  padding: 10px 8px;
+}
 /**********************************************************************************************
 ESTRUTURA END
 */
@@ -116,6 +174,14 @@ CLASSES START
 .btn-experimente:hover {
   text-decoration: underline;
 }
+.btn-info {
+  background: #0b80e0;
+}
+.btn-info.btn-lg {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
 .download-central {
   margin: 30px 0;
   text-align: center;
@@ -124,8 +190,67 @@ CLASSES START
   display: inline-block;
   margin: 0 10px;
 }
+.download-footer {
+  text-align: center;
+  display: inline-block;
+}
+.download-footer a {
+  display: inline-block;
+  margin: 0 10px;
+}
 .form-control {
   box-shadow: none;
+}
+.form-contato form {
+  margin: 0 0 20px;
+  position: relative;
+}
+.form-contato form .mensagem {
+  background: #ffffff url(../imagem/site/icon/message-gray.png) no-repeat 30px 28px;
+  padding: 30px 15px 15px 84px;
+}
+.form-contato form .form-content {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #d1dbf2;
+}
+.form-contato form .form-content .arrow {
+  position: absolute;
+  left: -9px;
+  top: 34px;
+}
+.form-contato form .form-group {
+  margin: 0;
+}
+.form-contato form .form-group + .form-group {
+  border-top: 1px solid #e8edf8;
+}
+.form-contato form .half {
+  float: left;
+  width: 50%;
+  border-top: 1px solid #e8edf8;
+}
+.form-contato form .half + .half {
+  border-left: 1px solid #e8edf8;
+}
+.form-contato form .form-control {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+}
+.form-contato form .form-control:focus {
+  background: #d1dbf2;
+}
+.form-contato form input.form-control {
+  height: 60px;
+}
+.form-contato form .btn {
+  border-width: 3px;
+  margin: 20px 0;
+  display: block;
 }
 .imagem {
   display: inline-block;
@@ -304,6 +429,23 @@ CLASSES START
 .page-contato .page-heading {
   padding: 90px 0 30px;
 }
+.page-contato .page-content {
+  padding-bottom: 90px;
+}
+.panel-default {
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.panel-default .panel-title {
+  text-transform: uppercase;
+  font-size: 22px;
+  margin: 0 0 10px;
+}
+.panel-default .panel-body + .panel-body {
+  border-top: 1px solid #e5e5e5;
+}
 .plano {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -434,7 +576,7 @@ CLASSES START
 .social-footer,
 .social-central,
 .social-header {
-  font-size: 24px;
+  font-size: 26px;
 }
 .social-footer a,
 .social-central a,
@@ -444,7 +586,7 @@ CLASSES START
 .social-footer a + a,
 .social-central a + a,
 .social-header a + a {
-  margin-left: 15px;
+  margin-left: 30px;
 }
 [class^='ycon-'],
 [class*='ycon-'] {
@@ -461,6 +603,24 @@ CLASSES START
   width: 85px;
   height: 21px;
   background-image: url(../imagem/site/chaves-gray.png);
+}
+.ycon-mail-gray {
+  width: 32px;
+  height: 23px;
+  background-image: url(../imagem/site/icon/mail-gray.png);
+}
+.ycon-phone-gray {
+  width: 30px;
+  height: 30px;
+  background-image: url(../imagem/site/icon/phone-gray.png);
+}
+.text-phone-lg {
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.text-phone-lg span {
+  color: #a8a8a8;
 }
 /**********************************************************************************************
 CLASSES END

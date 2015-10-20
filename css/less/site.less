@@ -32,13 +32,15 @@ FUNÇÕES PADRÕES END
 small {display: inline-block;line-height: 1.1;}
 textarea {resize:vertical;}
 a, button  {transition: all 0.25s ease 0s;}
+hr.white {border-color: rgba(215, 215, 215, 0.15);}
 /*
 FONTS START
 **********************************************************************************************/
 .btn-experimente small {font-family: 'latolight', Arial, sans-serif;font-weight: normal;}
+.site-resumo {font-family: 'latolight_italic', Arial, sans-serif;font-weight: normal;}
 .selo, .preco .moeda, .preco .valor, .preco .centavos, .btn {font-family: 'latoblack', Arial, sans-serif;font-weight: normal;}
 .page-vantagens .title {font-family: 'latoblack_italic', Arial, sans-serif;font-weight: normal;}
-strong, .navbar-nav {font-family: 'latobold', Arial, sans-serif;font-weight: normal;}
+.menu-footer, strong, .navbar-nav {font-family: 'latobold', Arial, sans-serif;font-weight: normal;}
 .page-sobre .resumo {font-family: 'latobold_italic', Arial, sans-serif;font-weight: normal;}
 .page-title {font-family: 'nexa_rust_sansblack', Arial, sans-serif;font-weight: normal;}
 .page-sobre .page-title .destaque {font-family: 'nexa_rust_script_l0regular', Arial, sans-serif;font-weight: normal;}
@@ -61,7 +63,32 @@ ESTRUTURA START
 	.site-central {}
 }
 .extra-footer {
-	.site-footer {}
+	.site-footer {
+        background: #47484b;padding:10px 0 20px;
+    }
+    .site-direitos {
+        background: #3d3e40;color: #b1b1b1;font-size: 14px;padding:20px 0;
+    }
+    .social-footer {text-align: right;padding:6px 0;}
+    .menu-footer {
+        font-size: 14px;text-transform: uppercase;margin-left: -15px;
+        > li {
+            display: inline-block;
+            a {color: #FFF;display: block;padding:15px;}
+        }
+    }
+    hr {margin:10px 0;}
+    .site-resumo {
+        font-size: 18px;color: #FFF;line-height: 1.6;margin:30px 0 15px;
+        .marca {padding-top:10px;}
+    }
+}
+.menu-direitos {
+    display: inline-block;
+    > li {
+        display: inline-block;
+        a {color: #FFF;display: block;padding:10px 8px;}
+    }
 }
 /**********************************************************************************************
 ESTRUTURA END
@@ -76,14 +103,48 @@ CLASSES START
 .btn-experimente {
     &:hover {text-decoration: underline;}
 }
+.btn-info {
+    background: #0b80e0;
+    &.btn-lg {.border-radius(10px);}
+}
 .download-central {
     margin:30px 0;text-align: center;
     a {
         display: inline-block;margin:0 10px;
     }
 }
+.download-footer {
+    text-align: center;display: inline-block;
+    a {
+        display: inline-block;margin:0 10px;
+    }
+}
 
 .form-control {box-shadow:none;}
+.form-contato {
+    form {
+        margin:0 0 20px;position: relative;
+        .mensagem {background: #FFF url(../imagem/site/icon/message-gray.png) no-repeat 30px 28px;padding:30px 15px 15px 84px}
+        .form-content {
+            .border-radius(10px);overflow: hidden;border:1px solid #d1dbf2;
+            .arrow {position: absolute;left: -9px;top: 34px;}
+        }
+        .form-group {
+            margin:0;
+            + .form-group {border-top:1px solid #e8edf8;}
+        }
+        .half {
+            float: left;width: 50%;border-top:1px solid #e8edf8;
+            + .half {border-left: 1px solid #e8edf8;}
+        }
+        .form-control {
+            .border-radius(0);border:0;
+            &:focus {background: #d1dbf2;}
+        }
+        input.form-control {height: 60px;}
+        .btn {border-width: 3px;;margin:20px 0;display: block;}
+    }
+}
 
 .imagem {display: inline-block;overflow: hidden;max-width: 100%;}
 .inline-block {display:inline-block;}
@@ -150,8 +211,15 @@ CLASSES START
     .page-content {padding-bottom:40px;}
 }
 .page-contato {
-    
     .page-heading {padding:90px 0 30px;}
+    .page-content {padding-bottom: 90px;}
+}
+.panel-default {
+    border:1px solid #cccccc;.border-radius(10px);
+    .panel-title {text-transform: uppercase;font-size: 22px;margin:0 0 10px;}
+    .panel-body {
+        + .panel-body {border-top: 1px solid #e5e5e5;}
+    }
 }
 .plano {
     .selo {position: absolute;left: -65px;top:20px;}
@@ -207,15 +275,22 @@ CLASSES START
 
 
 .social-footer, .social-central, .social-header {
-    font-size: 24px;
+    font-size: 26px;
     a {
         display: inline-block;
-        + a {margin-left: 15px;}
+        + a {margin-left: 30px;}
     }
 }
 [class^='ycon-'], [class*='ycon-'] {background-repeat:no-repeat;vertical-align:middle;display:inline-block;}
 .ycon-chaves-yellow {width: 563px;height: 194px;background-image:url(../imagem/site/chaves-yellow.png);}
 .ycon-chaves-gray {width: 85px;height: 21px;background-image:url(../imagem/site/chaves-gray.png);}
+.ycon-mail-gray {width: 32px;height: 23px;background-image:url(../imagem/site/icon/mail-gray.png);}
+.ycon-phone-gray {width: 30px;height: 30px;background-image:url(../imagem/site/icon/phone-gray.png);}
+
+.text-phone-lg {
+    font-size: 34px;line-height: 1;letter-spacing: -1px;
+    span {color: #a8a8a8;}
+}
 /**********************************************************************************************
 CLASSES END
 */

@@ -305,11 +305,56 @@
 										<div class="panel panel-default">
 											<div class="panel-body">
 												<h3 class="panel-title">Contatos</h3>
+												<div class="media">
+													<span class="pull-left"><span class="ycon-phone-gray"></span></span>
+													<div class="media-body">
+														<span class="text-phone-lg"><span>91.</span> 3085 0817</span>
+													</div> <!-- .media-body -->
+												</div> <!-- .media -->
+												<div class="media">
+													<span class="pull-left"><span class="ycon-mail-gray"></span></span>
+													<div class="media-body">
+												<a href="mailto:contato@diariodeclasse.com" title="Envie-nos um e-mail!">contato@diariodeclasse.com</a>
+													</div> <!-- .media-body -->
+												</div> <!-- .media -->
+											</div> <!-- .panel-body -->
+											<div class="panel-body">
+												<h3 class="panel-title">Redes sociais</h3>
+												<div class="social-central">
+													<a href="#" title="Acesse nosso Facebook" target="_blank"><span class="sr-only">Facebook</span><span class="fa fa-facebook"></span></a>
+													<a href="#" title="Acesse nosso Twitter" target="_blank"><span class="sr-only">Twitter</span><span class="fa fa-twitter"></span></a>
+													<a href="#" title="Acesse nosso Instagram" target="_blank"><span class="sr-only">Instagram</span><span class="fa fa-instagram"></span></a>
+												</div> <!-- .social-central -->
 											</div> <!-- .panel-body -->
 										</div> <!--.panel-default -->
 									</div> <!-- .col-md-4 -->
 									<div class="col-md-8">
-										
+										<div class="form-contato">
+											<form action="" method="POST" class="" id="FRM-CONTATO">
+												<div class="form-content">
+													<span class="ycon-losango arrow"></span>
+													<div class="form-group">
+														<label  class="sr-only">Escreva sua mensagem</label>
+														<textarea class="form-control mensagem" rows="6" name="MENSAGEM" id="MENSAGEM" placeholder="Escreva sua mensagem:"></textarea>	
+													</div> <!-- .form-group -->
+													<div class="form-group">
+														<label  class="sr-only">E-mail:</label>
+														<input type="text" class="form-control" placeholder="E-mail:" name="EMAIL" id="EMAIL" value=""  />
+													</div> <!-- .form-group -->
+													<div class="clearfix">
+														<div class="form-group half">
+															<label  class="sr-only">Nome:</label>
+															<input type="text" class="form-control" placeholder="Nome:" name="NOME" id="NOME" value="" />
+														</div> <!-- .form-group -->
+														<div class="form-group half">
+															<label  class="sr-only">Telefone:</label>
+															<input type="text" class="form-control" placeholder="Telefone:" name="TELEFONE" id="TELEFONE" value="" />
+														</div> <!-- .form-group -->
+													</div>
+												</div> <!-- .form-content -->
+												<button type="submit" class="btn btn-info btn-lg btn-block">Enviar</button>
+											</form>
+										</div> <!-- .form-contato -->
 									</div> <!-- .col-md-8 -->
 								</div> <!-- .row -->
 							</div> <!-- .page-content -->
@@ -321,7 +366,44 @@
 				<div class="extra-footer">
 					<div class="site-footer">
 						<div class="container">
-							<a href="http://www.libradesign.com.br" target="_blank" title="Libra Design"><img src="imagem/site/libra.png" alt="Logotipo Libra Design +Tech"></a>
+							<div class="row">
+								<div class="col-md-8">
+									<ul class="menu-footer">
+										<li><a href="#HOME" title="">Início</a></li>
+										<li><a href="#SOBRE" title="">Sobre</a></li>
+										<li><a href="#VANTAGENS" title="">Vantagens</a></li>
+										<li><a href="#EXPERIMENTE" title="">Experimente</a></li>
+										<li><a href="#CONTATO" title="">Contato</a></li>
+									</ul>
+								</div> <!-- .col-md-8 -->
+								<div class="col-md-4">
+									<div class="social-footer">
+										<a href="#" title="Acesse nosso Facebook" target="_blank"><span class="sr-only">Facebook</span><span class="fa fa-facebook"></span></a>
+										<a href="#" title="Acesse nosso Twitter" target="_blank"><span class="sr-only">Twitter</span><span class="fa fa-twitter"></span></a>
+										<a href="#" title="Acesse nosso Instagram" target="_blank"><span class="sr-only">Instagram</span><span class="fa fa-instagram"></span></a>
+									</div> <!-- .social-footer -->
+								</div> <!-- .col-md-4 -->
+							</div> <!-- .row -->
+							<hr class="white">
+							<div class="site-resumo">
+								<div class="row">
+									<div class="col-md-10">
+										<div class="media">
+											<div class="media-left marca">
+												<img src="imagem/site/diario-de-classe-white.png" alt="Marca Diário de Classe">
+											</div> <!-- .media-left -->
+											<div class="media-left chaves">
+												<img src="imagem/site/chaves-white.png" alt="Chaves">
+											</div> <!-- .media-left -->
+											<div class="media-body">
+												<span class="texto">
+													Tudo que você precisa nas suas aulas, organizadas em um só lugar. Baixe agora o aplicativo no seu <a href="#" target="_blank" title="Tenha o aplicativo no seu smartphone!">Android</a> ou <a href="#" target="_blank" title="Tenha o aplicativo em seu Iphone ou Ipad!">iOS</a>.
+												</span>
+											</div> <!-- .media-body -->
+										</div> <!-- .media -->
+									</div> <!-- .col-md-10 -->
+								</div> <!-- .row -->
+							</div> <!-- .site-resumo -->
 						</div> <!-- .container -->
 					</div> <!-- .site-footer -->
 					<div class="site-direitos">
@@ -336,6 +418,7 @@
 								<a href="#" target="_blank" title="Disponível no Google Play!"><img src="imagem/site/googleplay.png" alt="Disponível no Google Play!"></a>
 								<a href="#" target="_blank" title="Baixar na App Store"><img src="imagem/site/appstore.png" alt="Baixar na App Store"></a>
 							</div> <!-- .download-footer -->
+							<a href="http://www.libradesign.com.br" target="_blank" title="Libra Design" class="sr-only"><img src="imagem/site/libra.png" alt="Logotipo Libra Design +Tech"></a>
 						</div> <!-- .container -->
 					</div> <!-- .site-direitos -->
 				</div> <!-- .extra-footer -->
