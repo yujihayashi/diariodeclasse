@@ -52,6 +52,9 @@
 									<li class=""><a href="#EXPERIMENTE">Experimente</a></li>
 									<li class=""><a href="#CONTATO">Contato</a></li>
 								</ul>
+								<ul class="nav navbar-nav navbar-right">
+									<li class=""><a href="#modal-login" data-toggle="modal">Login</a></li>
+								</ul>
 							</div><!-- /.navbar-collapse -->
 						</div> <!-- .container -->
 					</nav>
@@ -61,10 +64,21 @@
 				<div class="site-central" id="content">
 					<div class="page page-home" id="HOME">
 						<div class="container">
+							<div class="atalhos">
+								<span class="icones">
+									<span class="icones-title">Apps</span>
+									<a href="#" target="_blank" title="Tenha o Diário de Classe em seu dispositivo!"><span class="sr-only">App Store</span><span class="fa fa-apple"></span></a>
+									<a href="#" target="_blank" title="Tenha o Diário de Classe em seu dispositivo!"><span class="sr-only">Google Play!</span><span class="fa fa-android"></span></a>
+								</span>
+								<a class="btn-login" data-toggle="modal" href="#modal-login">
+									<span class="fa fa-user"></span>
+									Login
+								</a>
+							</div>
 							<div class="page-heading">
 								<h1 class="page-title sr-only">Diário de Classe</h1>
 								<div class="content-brand">
-									<img src="imagem/site/diario-de-classe.png" alt="Diário de Classe">
+									<img src="imagem/site/diario-de-classe.png" alt="Diário de Classe" class="img-responsive center-block">
 								</div> <!-- .content-brand -->
 							</div> <!-- .page-heading -->
 							<div class="page-content">
@@ -314,7 +328,7 @@
 												<div class="media">
 													<span class="pull-left"><span class="ycon-mail-gray"></span></span>
 													<div class="media-body">
-												<a href="mailto:contato@diariodeclasse.com" title="Envie-nos um e-mail!">contato@diariodeclasse.com</a>
+														<a href="mailto:contato@diariodeclasse.com" title="Envie-nos um e-mail!">contato@diariodeclasse.com</a>
 													</div> <!-- .media-body -->
 												</div> <!-- .media -->
 											</div> <!-- .panel-body -->
@@ -425,6 +439,49 @@
 			</footer>
 		</div> <!-- .site-geral -->
 	</div> <!-- .extra-geral -->
+	<div class="modal fade modal-login" id="modal-login" style="">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-body clearfix">
+					<div class="left">
+						<h4 class="modal-title">Acesse sua área</h4>
+						<div class="row">
+							<div class="col-md-8">
+								<form action="">
+									<div class="form-group">
+										<label class="sr-only">Seu e-mail</label>
+										<input type="text" class="form-control login" placeholder="Seu e-mail:">
+									</div> <!-- .form-group -->
+									<div class="form-group">
+										<label class="sr-only">Senha</label>
+										<input type="password" class="form-control senha" placeholder="Senha:">
+									</div> <!-- .form-group -->
+									<p>
+										<a href="#" title="Inicie o processo de recuperação da sua senha!"><small>Esqueceu sua senha?</small></a>
+									</p>
+									<button class="btn btn-info btn-lg btn-block btn-rounded">Fazer login</button>
+								</form>
+							</div> <!-- .col-md-8 -->
+						</div> <!-- .row -->
+						<br>
+						<strong>Acesse sua conta pelo:</strong><br>
+						<a href="#" class="btn btn-default btn-rounded normal btn-sm text-facebook"><span class="fa fa-facebook"></span> Facebook</a>
+						<a href="#" class="btn btn-default btn-rounded normal btn-sm text-twitter"><span class="fa fa-twitter"></span> Twitter</a>
+						<a href="#" class="btn btn-default btn-rounded normal btn-sm text-google"><span class="fa fa-google"></span> Google</a>
+					</div> <!-- .left -->
+					<div class="right">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Ainda não tem cadastro?</h4>
+						<p class="lead">
+							Faça o seu agora mesmo.
+						</p>
+						<a href="#" title="" class="btn btn-experimente">Experimente</a><br>
+						<span class="selo-sm">Grátis por 30 dias</span>
+					</div> <!-- .right -->
+				</div> <!-- .modal-body -->
+			</div> <!-- .modal-content -->
+		</div> <!-- .modal-dialog -->
+	</div> <!-- #modal-login -->
 	<script src="http://localhost:35729/livereload.js"></script>
 	<script>
 	jQuery(document).ready(function(){

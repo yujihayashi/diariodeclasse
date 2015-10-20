@@ -37,10 +37,12 @@ FONTS START
   font-family: 'latolight', Arial, sans-serif;
   font-weight: normal;
 }
+.modal-login .lead,
 .site-resumo {
   font-family: 'latolight_italic', Arial, sans-serif;
   font-weight: normal;
 }
+.btn-login,
 .selo,
 .preco .moeda,
 .preco .valor,
@@ -49,6 +51,8 @@ FONTS START
   font-family: 'latoblack', Arial, sans-serif;
   font-weight: normal;
 }
+.selo-sm,
+.modal-login .right .modal-title,
 .page-vantagens .title {
   font-family: 'latoblack_italic', Arial, sans-serif;
   font-weight: normal;
@@ -159,6 +163,57 @@ CLASSES START
   margin-bottom: 0;
   padding-left: 0;
 }
+.atalhos {
+  text-transform: uppercase;
+  position: absolute;
+  right: 15px;
+  top: 18px;
+}
+.atalhos .icones {
+  font-size: 22px;
+}
+.atalhos .icones * {
+  vertical-align: middle;
+}
+.atalhos .icones a {
+  display: inline-block;
+  line-height: 1;
+}
+.atalhos .icones a + a {
+  margin-left: 8px;
+}
+.atalhos .icones-title {
+  font-size: 13px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.atalhos .btn-login {
+  margin-left: 15px;
+}
+.btn-sm {
+  font-size: 14px;
+}
+.btn-login {
+  background: #FFF;
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+  color: #0b80e0;
+  text-transform: uppercase;
+  padding: 8px 15px;
+}
+.btn-login .fa {
+  color: #c7c7c7;
+  font-size: 20px;
+}
+.btn-default {
+  background: #eeeeee;
+}
+.btn-default.normal {
+  text-transform: none;
+}
 .btn-gray {
   background: #EEE;
   color: #C93F2A;
@@ -173,14 +228,6 @@ CLASSES START
 }
 .btn-experimente:hover {
   text-decoration: underline;
-}
-.btn-info {
-  background: #0b80e0;
-}
-.btn-info.btn-lg {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
 }
 .download-central {
   margin: 30px 0;
@@ -252,6 +299,26 @@ CLASSES START
   margin: 20px 0;
   display: block;
 }
+.form-contato form .btn-info {
+  background: #0b80e0;
+}
+.form-contato form .btn-info.btn-lg {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+input.senha {
+  background-image: url(../imagem/site/icon/senha.png);
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  padding-left: 30px;
+}
+input.login {
+  background-image: url(../imagem/site/icon/login.png);
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  padding-left: 30px;
+}
 .imagem {
   display: inline-block;
   overflow: hidden;
@@ -259,6 +326,96 @@ CLASSES START
 }
 .inline-block {
   display: inline-block;
+}
+.modal-login .modal-content {
+  border: 0;
+}
+.modal-login .modal-body {
+  padding: 0;
+  border: 0;
+}
+.modal-login .close {
+  color: #FFF;
+  text-shadow: none;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  position: absolute;
+  right: 25px;
+  top: 15px;
+}
+.modal-login .modal-title {
+  text-transform: uppercase;
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+.modal-login .form-group {
+  margin-bottom: 10px;
+}
+.modal-login .form-control {
+  height: 40px;
+  line-height: 40px;
+}
+.modal-login .left,
+.modal-login .right {
+  float: left;
+  padding: 40px;
+  min-height: 420px;
+}
+.modal-login .left {
+  width: 55%;
+}
+.modal-login .right {
+  width: 45%;
+  background: #3c8fd0;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+  text-align: center;
+  color: #FFF;
+  padding-top: 90px;
+}
+.modal-login .right .modal-title {
+  text-transform: none;
+  font-size: 32px;
+  line-height: 1;
+  margin: 0;
+}
+.modal-login .right .lead {
+  font-size: 22px;
+}
+.modal-login .btn .fa {
+  font-size: 20px;
+}
+.modal-login .btn-experimente {
+  font-size: 28px;
+  color: #3c8fd0;
+  background: #FFF;
+  padding: 12px 26px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-shadow: 1px 1px 0 #f2f2f2, 2px 2px 0 #f2f2f2, 3px 3px 0 #f2f2f2, 4px 4px 0 #f2f2f2, 5px 5px 0 #f2f2f2, 6px 6px 0 #f2f2f2, 7px 7px 0 #f2f2f2, 8px 8px 0 #f2f2f2, 9px 9px 0 #f2f2f2, 10px 10px 0 #f2f2f2, 11px 11px 0 #f2f2f2, 12px 12px 0 #f2f2f2, 13px 13px 0 #f2f2f2, 14px 14px 0 #f2f2f2, 15px 15px 0 #f2f2f2, 16px 16px 0 #f2f2f2, 17px 17px 0 #f2f2f2, 18px 18px 0 #f2f2f2, 19px 19px 0 #f2f2f2, 20px 20px 0 #f2f2f2, 21px 21px 0 #f2f2f2, 22px 22px 0 #f2f2f2, 23px 23px 0 #f2f2f2, 24px 24px 0 #f2f2f2, 25px 25px 0 #f2f2f2, 26px 26px 0 #f2f2f2, 27px 27px 0 #f2f2f2, 28px 28px 0 #f2f2f2, 29px 29px 0 #f2f2f2, 30px 30px 0 #f2f2f2, 31px 31px 0 #f2f2f2, 32px 32px 0 #f2f2f2, 33px 33px 0 #f2f2f2, 34px 34px 0 #f2f2f2, 35px 35px 0 #f2f2f2, 36px 36px 0 #f2f2f2, 37px 37px 0 #f2f2f2, 38px 38px 0 #f2f2f2, 39px 39px 0 #f2f2f2, 40px 40px 0 #f2f2f2, 41px 41px 0 #f2f2f2, 42px 42px 0 #f2f2f2, 43px 43px 0 #f2f2f2, 44px 44px 0 #f2f2f2, 45px 45px 0 #f2f2f2, 46px 46px 0 #f2f2f2, 47px 47px 0 #f2f2f2, 48px 48px 0 #f2f2f2, 49px 49px 0 #f2f2f2;
+  overflow: hidden;
+}
+.modal-login .selo-sm {
+  width: 108px;
+  height: 57px;
+  background: url(../imagem/site/selo-sm.png) no-repeat center bottom;
+  text-align: center;
+  color: #3c8fd0;
+  font-size: 15px;
+  display: inline-block;
+  line-height: 1;
+  padding: 10px 15px 0;
+}
+.modal-open {
+  display: block;
+  position: relative;
+  z-index: 1;
 }
 .pixel {
   width: 100%;
@@ -622,12 +779,59 @@ CLASSES START
 .text-phone-lg span {
   color: #a8a8a8;
 }
+.text-facebook {
+  color: #1d35c8;
+}
+.text-twitter {
+  color: #4895e4;
+}
+.text-google {
+  color: #ed5c23;
+}
 /**********************************************************************************************
 CLASSES END
 */
+@media (max-width: 981px) {
+  .atalhos {
+    position: relative;
+    top: 0;
+    right: auto;
+    padding-top: 10px;
+  }
+  .page-home .page-heading {
+    padding: 10px 0;
+    min-height: 87px;
+  }
+}
 @media (max-width: 767px) {
   .preco .anual {
     text-align: center;
     border: 0;
+  }
+  .ycon-chaves-yellow {
+    width: 100%;
+    background-position: center top;
+  }
+  .page-home .btn-experimente {
+    font-size: 22px;
+    padding: 10px 26px;
+  }
+  .modal-login .left,
+  .modal-login .right {
+    width: 100%;
+    float: none;
+    min-height: none;
+  }
+  .modal-login .close {
+    color: #3c8fd0;
+  }
+}
+@media (max-width: 480px) {
+  .selo {
+    display: none;
+  }
+  .page-home .monitor {
+    font-size: 18px;
+    padding: 40px 10px 0;
   }
 }
