@@ -81,12 +81,17 @@ FONTS END
 /*
 ESTRUTURA START
 **********************************************************************************************/
-.extra-header .navbar {
+.extra-header .navbar-fixed-top {
   border: 0;
   margin: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  display: none;
+}
+.extra-header .navbar-default .links {
+  float: right;
+  padding: 7px 0;
 }
 .extra-header .navbar-brand {
   padding: 8px 10px;
@@ -148,6 +153,12 @@ ESTRUTURA START
   display: block;
   padding: 10px 8px;
 }
+.interna .extra-central {
+  background: #e9e7e7;
+}
+.interna .navbar-default {
+  margin: 0;
+}
 /**********************************************************************************************
 ESTRUTURA END
 */
@@ -163,32 +174,41 @@ CLASSES START
   margin-bottom: 0;
   padding-left: 0;
 }
-.atalhos {
+.atalhos,
+.navbar .links {
   text-transform: uppercase;
-  position: absolute;
-  right: 15px;
-  top: 18px;
 }
-.atalhos .icones {
+.atalhos .icones,
+.navbar .links .icones {
   font-size: 22px;
 }
-.atalhos .icones * {
+.atalhos .icones *,
+.navbar .links .icones * {
   vertical-align: middle;
 }
-.atalhos .icones a {
+.atalhos .icones a,
+.navbar .links .icones a {
   display: inline-block;
   line-height: 1;
 }
-.atalhos .icones a + a {
+.atalhos .icones a + a,
+.navbar .links .icones a + a {
   margin-left: 8px;
 }
-.atalhos .icones-title {
+.atalhos .icones-title,
+.navbar .links .icones-title {
   font-size: 13px;
   vertical-align: middle;
   margin-right: 8px;
 }
-.atalhos .btn-login {
+.atalhos .btn-login,
+.navbar .links .btn-login {
   margin-left: 15px;
+}
+.atalhos {
+  position: absolute;
+  right: 15px;
+  top: 18px;
 }
 .btn-sm {
   font-size: 14px;
@@ -824,6 +844,31 @@ CLASSES END
   }
   .modal-login .close {
     color: #3c8fd0;
+  }
+  .extra-header .navbar-default .links {
+    float: none;
+    text-align: center;
+  }
+  .page-heading .page-title {
+    font-size: 22px;
+  }
+  .page-heading .resumo {
+    font-size: 18px;
+  }
+  .media > .pull-left {
+    text-align: center;
+    float: none;
+    padding: 0;
+    margin: 0 0 10px;
+    width: 100%;
+  }
+  .media-body {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .site-resumo .chaves {
+    display: none;
   }
 }
 @media (max-width: 480px) {

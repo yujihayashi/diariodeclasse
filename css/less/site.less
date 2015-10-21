@@ -52,7 +52,11 @@ ESTRUTURA START
 **********************************************************************************************/
 .extra-header {
 	.site-header {}
-	.navbar {border:0;margin:0;.border-radius(0);}
+	.navbar-fixed-top {border:0;margin:0;.border-radius(0);display: none;}
+    .navbar-default {
+        .links {float: right;padding:7px 0;}
+        .btn-login {}
+    }
     .navbar-brand {
         padding:8px 10px;
         img {max-height: 36px;}
@@ -90,6 +94,10 @@ ESTRUTURA START
         a {color: #FFF;display: block;padding:10px 8px;}
     }
 }
+.interna {
+    .extra-central {background: #e9e7e7;}
+    .navbar-default {margin:0;}
+}
 /**********************************************************************************************
 ESTRUTURA END
 */
@@ -98,8 +106,8 @@ CLASSES START
 **********************************************************************************************/
 [class^='lista-'], [class^='lista-'], [class^='menu-'], [class^='menu-'] ul, .cycle-slideshow {list-style:none;margin-bottom:0;padding-left:0;}
 
-.atalhos {
-    text-transform: uppercase;position: absolute;right: 15px;top:18px;
+.atalhos, .navbar .links {
+    text-transform: uppercase;
     .icones {
         font-size: 22px;
         * {vertical-align: middle;}
@@ -111,6 +119,7 @@ CLASSES START
     .icones-title {font-size: 13px;vertical-align: middle;margin-right: 8px;}
     .btn-login {margin-left: 15px;}
 }
+.atalhos {position: absolute;right: 15px;top:18px;}
 .btn-sm {font-size: 14px;}
 .btn-login {
     background: #FFF;display: inline-block;.border-radius(5px);font-size: 13px;color: #0b80e0;text-transform: uppercase;padding:8px 15px;
@@ -369,6 +378,22 @@ CLASSES END
     .modal-login {
         .left, .right {width: 100%;float:none;min-height: none;}
         .close {color: @primary-color;}
+    }
+    .extra-header {
+        .navbar-default {
+            .links {float:none;text-align: center;}
+        }
+    }
+    .page-heading {
+        .page-title {font-size: 22px;}
+        .resumo {font-size: 18px;}
+    }
+    .media {
+        > .pull-left {text-align: center;float:none;padding:0;margin:0 0 10px;width: 100%;}
+    }
+    .media-body {display: block;width: 100%;text-align: center;}
+    .site-resumo {
+        .chaves {display: none;}
     }
 }
 @media (max-width: 480px) {

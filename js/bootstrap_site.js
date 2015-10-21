@@ -1,11 +1,16 @@
 $(function() {
 
-    $('.navbar').css({display:'none'});
+    $('.navbar-fixed-top').css({display:'none'});
+    if ($(window).scrollTop() >= '500') {
+        $('.navbar-fixed-top').css({display:'block'});
+    } else {
+        $('.navbar-fixed-top').css({display:'none'});
+    }
     $(window).scroll(function () {
         if ($(window).scrollTop() >= '500') {
-            $('.navbar').css({display:'block'});
+            $('.navbar-fixed-top').css({display:'block'});
         } else {
-            $('.navbar').css({display:'none'});
+            $('.navbar-fixed-top').css({display:'none'});
         }
     });
 
