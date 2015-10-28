@@ -642,7 +642,7 @@ input.login {
   -moz-border-radius: 10px;
   border-radius: 10px;
   padding: 18px 30px 30px;
-  min-height: 390px;
+  min-height: 420px;
   position: relative;
 }
 .plano .title {
@@ -713,7 +713,8 @@ input.login {
   text-align: left;
 }
 .preco .text {
-  font-size: 18px;
+  font-size: 14px;
+  max-width: 90px;
 }
 .preco .anual {
   border-left: 1px solid #CCC;
@@ -730,10 +731,12 @@ input.login {
   height: 131px;
   text-align: center;
   color: #FFF;
-  font-size: 22px;
+  font-size: 15px;
   text-transform: uppercase;
   display: inline-block;
   line-height: 1;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .selo .text {
   display: inline-block;
